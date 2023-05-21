@@ -1,5 +1,5 @@
 %ic {
-	font-family: "icons";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -12,5 +12,58 @@
 	&:before {
 		@extend %ic;
 		display: block;
+	}
+}
+
+._icon-arrow-bottom:before {
+	content: "\e900";
+	color: #777e91;
+  }
+  ._icon-arrow-left:before {
+	content: "\e901";
+	color: #777e91;
+  }
+  ._icon-arrow-right:before {
+	content: "\e902";
+	color: #777e91;
+  }
+  ._icon-bool:before {
+	content: "\e903";
+	color: #777e91;
+  }
+
+
+
+  ._icon-facebook:before {
+	content: "\e904";
+	color: #777e91;
+	font-size: 18px;
+	transition: color 0.3s ease 0s;
+	
+  }
+  @media (any-hover:hover) {
+	._icon-facebook:hover:before {
+		color: #FF592C;
+	}
+}
+  ._icon-insta:before {
+	content: "\e905";
+	color: #777e91;
+	font-size: 18px;
+	
+  }
+  @media (any-hover:hover) {
+	._icon-insta:hover:before {
+		color: #FF592C;
+	}
+}
+  ._icon-twiter:before {
+	content: "\e906";
+	color: #777e91;
+	font-size: 18px;
+  }
+  @media (any-hover:hover) {
+	._icon-twiter:hover:before {
+		color: #FF592C;
 	}
 }

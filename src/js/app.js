@@ -30,7 +30,7 @@ flsFunctions.isWebp();
 /* Додавання loaded для HTML після повного завантаження сторінки */
 // flsFunctions.addLoadedClass();
 /* Модуль для роботи з меню (Бургер) */
-// flsFunctions.menuInit();
+ flsFunctions.menuInit();
 /* Враховування плаваючої панелі на мобільних пристроях при 100vh */
 // flsFunctions.fullVHfix();
 
@@ -39,7 +39,7 @@ flsFunctions.isWebp();
 Документація: https://template.fls.guru/template-docs/modul-spojlery.html
 Сніппет (HTML): spollers
 */
-// flsFunctions.spollers();
+ flsFunctions.spollers();
 
 /*
 Модуль "Таби"
@@ -74,7 +74,7 @@ flsFunctions.isWebp();
 Документація: https://template.fls.guru/template-docs/funkcional-popup.html
 Сніппет (HTML): pl, pop
 */
-// import './libs/popup.js'
+ import './libs/popup.js'
 
 /*
 Модуль паралаксу мишею
@@ -191,7 +191,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 // Функціонал додавання класів до хедеру під час прокручування
 // Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-// flsScroll.headerScroll();
+ flsScroll.headerScroll();
 
 // Модуль анімація цифрового лічильника
 // Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
@@ -224,7 +224,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 /* Динамічний адаптив */
 // Документація: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
-// import "./libs/dynamic_adapt.js";
+ import "./libs/dynamic_adapt.js";
 
 /* Форматування чисел */
 // import './libs/wNumb.min.js';

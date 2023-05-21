@@ -1,1 +1,74 @@
 // Заголовки, загальні БЕМ блоки та інше...
+//  ---------------  Кнопка прозрачная ---------------------
+.button {
+    display: inline-block;
+    font-family: 'sf';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; /* 16/14 */
+    text-align: center;
+    color: #23262F;
+    padding: 12px 16px;
+    border: 2px solid #E6E8EC;
+    border-radius: 90px;
+    transition-property: background, color, border;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    @media (any-hover:hover) {
+        &:hover {
+            background: #23262F;
+            color: #FCFCFD;
+            border: 2px solid #23262F;
+        }
+    }
+   
+}
+/*
+<div class="header__btn">
+	<a href="#" class="header__button button">Get free trial</a>
+</div>
+*/
+
+//  ---------------------  поп пап поиск-------------------------
+.popup {
+
+    // .popup__text
+
+    &__text {
+    }
+}
+.seach-form {
+
+    // .seach-form__body
+
+    &__body {
+        display: flex;
+        gap: 15px;
+    }
+
+    // .seach-form__input
+
+    &__input {
+        flex: 1 1 auto;
+        border-radius: 8px;
+        padding: 0px 0px 0px 10px;
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+    color: #23262F;
+    }
+}
+.input {
+    
+}
+.button-search {
+    background: #FF592C;
+    padding: 5px;
+    border-radius: 50%;
+}
