@@ -72,3 +72,47 @@
     padding: 5px;
     border-radius: 50%;
 }
+
+//  ---------------------  форма отправки на почту -----------------
+.item-form {
+        border: 2px solid #E6E8EC;
+        border-radius: 90px;
+        padding: 8px 8px 8px 16px;
+        display: flex;
+        &._form-focus {
+            border-color: #23262F; /* Красный цвет */
+        }
+
+    // .item-form__input
+
+    &__input {
+        flex: 1 1 auto;
+        background: inherit;
+        &::placeholder {
+          
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.73;
+            color: #777E91;
+        }
+    }
+
+    // .item-form__button
+
+    &__button {
+        background: #FF592C;
+        padding: 4px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        position: relative;
+        img {
+            max-width: 100%;
+            position: absolute;
+            
+            top: calc(50% - 4.5px);
+            left: calc(50% - 7px);
+        }
+    }
+}
+
