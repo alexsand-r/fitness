@@ -187,3 +187,61 @@
 /*
  @include adaptiveValue("padding-bottom", 136, 64,0,1440,375);  // отступ к низу от блока
  */
+
+
+ /*
+  // .plan-tabl__row
+
+    &__row {
+        
+        td {
+            border-bottom: 1px solid #E6E8EC;  Здесь #ff0000 - это цвет границы 
+           
+        }
+       
+        img {
+            max-width: 100%;
+            vertical-align: unset;
+           
+        }   
+   
+  
+    }
+    &__row:last-child {
+        td {
+            border-bottom: 1px solid transparent;  Здесь #ff0000 - это цвет границы 
+        }
+    }
+
+  
+    //plan-tabl__text
+    &__text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #23262F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+            gap: 15px;
+    }
+
+    // .plan-tabl__btn
+
+    &__btn {
+        padding: 54px 0px;
+        @media (max-width: 450px) {
+            display: flex;
+        }
+    }
+
+    // .plan-tabl__button
+
+    &__button {
+    }
+
+
+ */

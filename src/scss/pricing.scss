@@ -65,34 +65,53 @@
       
     }
 
-    // .plan-tabl__row
+  
+}
 
-    &__row {
-        
-        td {
-            border-bottom: 1px solid #E6E8EC; /* Здесь #ff0000 - это цвет границы */
-           
-        }
+
+
+
+
+
+.tabl-row {
+    position: relative;
+        &:not(:last-child) {
+             :before {
+                content: '';
+                position: absolute;
+                 bottom: 0px;
+                 left: 0px;
+                
+                 background: #E6E8EC;
+                 height: 1px;
+                 width: 100%;
+                 @media (max-width: 991.98px) {
+                    width: 92%;
+                    left: 35px;
+                 }
+                 @media (max-width: 676.98px) {
+                    width: 90%;
+                    left: 35px;
+                 }
+                 @media (max-width: 560px) {
+                    width: 86%;
+                    left: 35px;
+                 }
+                 @media (max-width: 450px) {
+                    width: 80%;
+                    left: 35px;
+                 }
+            }
+       }
+
+    img {
+        max-width: 100%;
+        vertical-align: unset;
        
-        img {
-            max-width: 100%;
-            vertical-align: unset;
-           
-        }   
-   
-  
-    }
-    &__row:last-child {
-        td {
-            border-bottom: 1px solid transparent; /* Здесь #ff0000 - это цвет границы */
-        }
-    }
-
-  
-    //plan-tabl__text
-    &__text {
-            font-family: 'Poppins';
-            font-style: normal;
+    }  
+    
+}
+.tabl-text {
             font-weight: 600;
             font-size: 16px;
             line-height: 1.5;
@@ -102,22 +121,26 @@
             align-items: center;
             padding: 20px 0px;
             gap: 15px;
-    }
+            @media (max-width: 991.98px) {
+                padding: 20px 32px 20px 32px;
+            }
+}
+.tabl-btn {
 
-    // .plan-tabl__btn
-
-    &__btn {
-        padding: 54px 0px;
+    padding: 54px 0px;
         @media (max-width: 450px) {
             display: flex;
+            padding-left: 30px;
         }
-    }
-
-    // .plan-tabl__button
+    // .tabl-btn__button
 
     &__button {
     }
 }
+
+
+
+
 .tabl-column:nth-child(1) {
     display: flex;
     position: relative;
@@ -210,6 +233,18 @@
         @media (max-width: 991.98px) {
             left: 40%;
         }
+        @media (max-width: 850px) {
+            left: 35%;
+        }
+        @media (max-width: 650px) {
+            left: 30%;
+        }
+        @media (max-width: 450px) {
+            left: 0%;
+        }
+    }
+    @media (max-width: 450px) {
+        padding: 0px 0px 0px 45px;
     }
 }
 
@@ -223,81 +258,65 @@
     color: #777E91;
     @media (max-width: 991.98px) {
         margin-bottom: 32px;
+        
+    }
+    @media (max-width: 450px) {
+        padding: 0px 0px 0px 30px;
     }
 }
 
-.button-orange {
-}
-.button {
-}
 
-// ------------------------------ таблица после 991,98 -------------
-.plan-tabl2 {
-   
-  
+
+
+// ---------------------------------  I   таб на 991,98 --------------------------------
+
+.plan-tabl-2 {
+    margin-bottom: 32px;
+ 
     @media (min-width: 991.98px) {
         display: none;
-        border-collapse: collapse;
-        border-spacing: 0;
-          padding: 0px 32px 0px 32px;
-    }
-    
-}
-.plan-tabl2 {
-
-    // .plan-tabl__row
-
-    &__row {
-       position: relative;
-    //    @media (max-width: 991.98px) {
-    //     &:not(:last-child) {
-    //         :before {
-    //             content: '';
-    //             position: absolute;
-    //             bottom: 0px;
-    //             left: 35px;
-                
-    //             background: #E6E8EC;
-    //             height: 1px;
-    //             width: 92%;
-    //         }
-    //        }
-    //    }
-      
-       
-       
-        td {
-           
-               // 
-              @media (max-width: 991.98px) {
-                border-bottom: 1px solid #0606b8; /* Здесь #ff0000 - это цвет границы */
-                padding: 20px 32px 20px 32px;
-                
-              }
-           
-        }
-    }
-    &__text {
         
-          
-            
-        
+    }
+    @media (max-width: 991.98px) {
+        border-radius: 24px;
+    }
+    // .plan-tabl-2__title
 
+    &__title {
     }
 }
 .tabl-column2 {
     padding-top: 45px;
-   
+    @media (max-width: 450px) {
+        text-align: left;
+        padding-left: 30px;
+   }
 }
+.tabl-row td {
+     @media (max-width: 991.98px) {
+        border: 1px solid #FCFCFD; /* Устанавливаем границы ячеек */
+     }
+   
+  }
 
 
 // ------------------------------- спойлер - цены на подписки ----------------------
 
 .spollers-pricing {
-
+    @media (max-width: 991.98px) {
+        background: #FCFCFD;
+        //border: 2px solid #FCFCFD; /* Устанавливаем границы ячеек */
+        border-collapse: collapse;
+        border-spacing: 0;
+      
+       
+      }
     // .spollers-pricing__item
 
     &__item {
+        position: relative;
+       
+      
     }
 
     // .spollers-pricing__title
@@ -309,7 +328,7 @@
         text-align: center;
         color: #23262F;
         display: flex;
-        gap: 5px;
+        gap: 10px;
         flex-direction: row-reverse;
         align-items: center;
         margin: 0 auto;
@@ -322,6 +341,10 @@
 			
 			
 		}
+       @media (max-width: 450px) {
+        text-align: left;
+        margin-left: 35px;
+       }
 
     }
 

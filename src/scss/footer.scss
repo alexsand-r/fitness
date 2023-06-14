@@ -59,7 +59,7 @@
             content: '';
             position: absolute;
             top: 0px;
-            @include adaptiveValue("left", 757, 620,0,1440,1024);
+            @include adaptiveValue("left", 757, 650,0,1140,1024);
             //left: 757px;
             height: 100%;
             width: 1px;
