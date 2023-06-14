@@ -14,6 +14,7 @@
 			<h2>Кeady-made pages:</h2>
 			<ol class="rootpage__list">
 				<li><a target="_blank" href="home.html">Home</a></li>
+				<li><a target="_blank" href="pricing.html">Pricing</a></li>
 			</ol>
 			<h2>Попапи:</h2>
 			<ol class="rootpage__list">
@@ -30,8 +31,11 @@
 				<h2>My contacts:</h2>
 				<p>Email: <a href="mailto:email@gmail.com">1inboxna@gmail.com</a></p>
 				<p>Telegram: <a href="tel:8800800800">+380996079507</a></p>
-				<p>Соц. мережі: <a href="">посилання</a></p>
+				<p>GitHub: <a href="https://github.com/alexsand-r">link</a></p>
 			</div>
+		</div>
+		<div class="magic-image">
+			<img src="@img/start2.png" alt="cover">
 		</div>
 	</body>
 	<style>
@@ -50,7 +54,7 @@
 			min-width: 320px;
 			width: 100%;
 			color: #fff;
-			background-color: #5e5373;
+				background: #FCFCFD;  /* ФОН СТРАНИЧКИ*/
 		}
 		body {
 			font-family: Montserrat;
@@ -85,6 +89,8 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
+			position: relative;
+			z-index: 80;
 		}
 		@media (max-width: 767px) {
 			.rootpage{
@@ -92,7 +98,7 @@
 			}
 		}
 		h1 {
-			color: #ebe691;
+			color: #23262F;
 			font-size: 2.5rem;
 			margin: 0px 0px 1.25rem 0px;
 		}
@@ -103,7 +109,7 @@
 			}
 		}
 		h2 {
-			color: #ebe691;
+			color: #23262F;
 			font-size: 1.25rem;
 			margin: 0px 0px 1rem 0px;
 		}
@@ -138,7 +144,7 @@
 		}
 		}
 		.rootpage__contacts{
-			background: #32b5a4;
+			background: #FF592C;
 			
 		}
 		.rootpage__contacts a{
@@ -148,5 +154,18 @@
 			background: #c22d63;
 			margin: 0px 0px 1rem 0px;
 		}
+
+		.magic-image {
+			position: relative;
+			transform: translate(50%,-50%);
+			img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 	</style>
 </html>

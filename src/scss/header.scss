@@ -5,8 +5,10 @@
     top: 0;
     left: 0;
     z-index: 100;
-	padding: 60px 0px;
+	padding: 40px 0px;
 	min-height: 40px;
+	transition: padding 0.3s ease 0s;
+	background: #FCFCFD;
 	@media (max-width: 1024px) {
 		padding: 15px 0px;
 	}
@@ -14,7 +16,7 @@
 	
 	&._header-scroll {
 		background: hsl(0, 0%, 100%);
-		//padding: 10px 0px 10px 0px;
+		padding: 10px 0px 10px 0px;
 		//min-height: 40px;
 		
 	}
@@ -282,9 +284,7 @@
 	&__item {
 		position: relative;
 		@media (max-width: 1024px) {
-			&:hover {
 			
-			}
 		
 		}
 		

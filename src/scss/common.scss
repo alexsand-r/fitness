@@ -31,6 +31,33 @@
 </div>
 */
 
+
+//-----------------------  button-orange -------------------------
+.button-orange {
+    display: inline-block;
+    font-family: 'sf';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; /* 16/14 */
+    text-align: center;
+    color: #FCFCFD;
+    padding: 12px 16px;
+    border: 2px solid #FF592C;
+    background: #FF592C;
+    border-radius: 90px;
+    transition-property: background, color, border;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    @media (any-hover:hover) {
+        &:hover {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #FE6D3A;
+            color: #FCFCFD;
+            border: 2px solid #23262F;
+        }
+    }
+}
 //  ---------------------  поп пап поиск-------------------------
 .popup {
 
@@ -116,3 +143,47 @@
     }
 }
 
+// ------------------------- title 64 px ---------------
+
+.title-big {
+        font-family: 'sf';
+        font-style: normal;
+        font-weight: 700;
+        
+        @include adaptiveValue("font-size", 64, 48,0,1440,375);
+        line-height: 1.0;
+        letter-spacing: -0.02em;
+        color: #23262F;
+        
+}
+
+
+// ---------------------------- title 48 px -------------------
+.title-small {
+    font-family: 'sf';
+    font-style: normal;
+    font-weight: 700;
+    @include adaptiveValue("font-size", 48, 40,0,1440,375);
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #23262F;
+}
+
+// -------------------------- .title-40 ---------------------
+
+.title-40 {
+    font-family: 'sf';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    @include adaptiveValue("font-size", 40, 32,0,1440,375);
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #23262F;
+}
+
+
+/*
+ @include adaptiveValue("padding-bottom", 136, 64,0,1440,375);  // отступ к низу от блока
+ */

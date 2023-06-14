@@ -23,10 +23,25 @@
 	content: "\e901";
 	color: #777e91;
   }
+  @media (any-hover:hover) {
+	._icon-arrow-left:hover:before{
+		color: #585b64;
+	}
+  }
+
   ._icon-arrow-right:before {
 	content: "\e902";
 	color: #777e91;
   }
+  @media (any-hover:hover) {
+	._icon-arrow-right:hover:before{
+		color: #585b64;
+	}
+  }
+
+
+
+
   ._icon-bool:before {
 	content: "\e903";
 	color: #777e91;

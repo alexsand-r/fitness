@@ -1,0 +1,333 @@
+//===========================================  plan  =========================================================
+.page {
+
+    // .page__plan
+
+    &__plan {
+        
+        background: #F4F5F6;
+    }
+}
+.plan {
+
+    // .plan__container
+
+    &__container {
+    }
+
+    // .plan__body
+
+    &__body {
+        @include adaptiveValue("padding-top", 239, 64,0,1440,375);
+        @include adaptiveValue("padding-bottom", 136, 64,0,1440,375);
+       
+        text-align: center;
+       
+    }
+
+    &__top {
+        margin-bottom: 80px;
+    }
+
+    // .plan__subtitle
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.0;
+        text-transform: uppercase;
+        color: #777E91;
+        &:not(:last-child) {
+        margin: 0px 0px 16px 0px;
+        }
+    }
+
+    // .plan__title
+
+    &__title {
+        max-width: 738px;
+        margin: 0 auto;
+    }
+}
+//  -------------------------------------------  таблиця ----------------------------------
+.plan-tabl {
+    
+        border-collapse: collapse;
+        border-spacing: 0;
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    
+    // .plan-tabl__title
+
+    &__title {
+      
+      
+    }
+
+    // .plan-tabl__row
+
+    &__row {
+        
+        td {
+            border-bottom: 1px solid #E6E8EC; /* Здесь #ff0000 - это цвет границы */
+           
+        }
+       
+        img {
+            max-width: 100%;
+            vertical-align: unset;
+           
+        }   
+   
+  
+    }
+    &__row:last-child {
+        td {
+            border-bottom: 1px solid transparent; /* Здесь #ff0000 - это цвет границы */
+        }
+    }
+
+  
+    //plan-tabl__text
+    &__text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #23262F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+            gap: 15px;
+    }
+
+    // .plan-tabl__btn
+
+    &__btn {
+        padding: 54px 0px;
+        @media (max-width: 450px) {
+            display: flex;
+        }
+    }
+
+    // .plan-tabl__button
+
+    &__button {
+    }
+}
+.tabl-column:nth-child(1) {
+    display: flex;
+    position: relative;
+    p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.0;
+        text-transform: uppercase;
+        color: #777E91;
+       // margin-top: 256px;
+       position: absolute;
+       top: 200px;
+       left: 0px;
+    }
+    
+}
+.tabl-column:nth-child(2),
+.tabl-column:nth-child(3) {
+    padding: 48px 0px 72px 0px;
+   
+        
+}
+.tabl-column:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0px 72px 0px;
+}
+.free {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #9757D7;
+    &:not(:last-child) {
+    margin: 0px 0px 8px 0px;
+    }
+}
+.premium {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FF592C;
+    &:not(:last-child) {
+        margin: 0px 0px 8px 0px;
+    }
+}
+.unlimited {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #EF466F;
+    &:not(:last-child) {
+    margin: 0px 0px 8px 0px;
+    }
+}
+.conditions {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #777E91;
+    margin-bottom: 32px;
+}
+.text-tabl {
+    font-family: 'sf';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #23262F;
+    margin-bottom: 5px;
+    position: relative;
+    span {
+      
+        background: url('@img/table/baks.svg') 0 0 no-repeat;
+       
+        position: absolute;
+        top: 0px;
+        @include adaptiveValue("left", 25, 2,0,1440,991.98);
+        
+        width: 15px;
+        height: 32px;
+        @media (max-width: 991.98px) {
+            left: 40%;
+        }
+    }
+}
+
+
+.period {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #777E91;
+    @media (max-width: 991.98px) {
+        margin-bottom: 32px;
+    }
+}
+
+.button-orange {
+}
+.button {
+}
+
+// ------------------------------ таблица после 991,98 -------------
+.plan-tabl2 {
+   
+  
+    @media (min-width: 991.98px) {
+        display: none;
+        border-collapse: collapse;
+        border-spacing: 0;
+          padding: 0px 32px 0px 32px;
+    }
+    
+}
+.plan-tabl2 {
+
+    // .plan-tabl__row
+
+    &__row {
+       position: relative;
+    //    @media (max-width: 991.98px) {
+    //     &:not(:last-child) {
+    //         :before {
+    //             content: '';
+    //             position: absolute;
+    //             bottom: 0px;
+    //             left: 35px;
+                
+    //             background: #E6E8EC;
+    //             height: 1px;
+    //             width: 92%;
+    //         }
+    //        }
+    //    }
+      
+       
+       
+        td {
+           
+               // 
+              @media (max-width: 991.98px) {
+                border-bottom: 1px solid #0606b8; /* Здесь #ff0000 - это цвет границы */
+                padding: 20px 32px 20px 32px;
+                
+              }
+           
+        }
+    }
+    &__text {
+        
+          
+            
+        
+
+    }
+}
+.tabl-column2 {
+    padding-top: 45px;
+   
+}
+
+
+// ------------------------------- спойлер - цены на подписки ----------------------
+
+.spollers-pricing {
+
+    // .spollers-pricing__item
+
+    &__item {
+    }
+
+    // .spollers-pricing__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.67;
+        text-align: center;
+        color: #23262F;
+        display: flex;
+        gap: 5px;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0 auto;
+
+        &._spoller-active {         // анимация галочки при нажатии
+			&::before {
+				transform: rotate(-180deg);
+				
+			}
+			
+			
+		}
+
+    }
+
+    // .spollers-pricing__body
+
+    &__body {
+        width: 100%;
+    }
+}

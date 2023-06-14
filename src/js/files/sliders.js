@@ -27,9 +27,9 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('.swiper')) { // Вказуємо склас потрібного слайдера
+	if (document.querySelector('.velokity__slider')) { // Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
+		new Swiper('.velokity__slider', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
 			modules: [Navigation],
@@ -37,7 +37,7 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
-			autoHeight: true,
+			//autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
@@ -72,9 +72,10 @@ function initSliders() {
 			*/
 
 			// Кнопки "вліво/вправо"
+
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				prevEl: '.velokity__left',
+				nextEl: '.velokity__right',
 			},
 			/*
 			// Брейкпоінти
@@ -98,6 +99,92 @@ function initSliders() {
 				},
 			},
 			*/
+			// Події
+			on: {
+
+			}
+		});
+	}
+
+	//--------------------------   for__slider  --------------------
+
+	if (document.querySelector('.for__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.for__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			//spaceBetween: 24,
+			//autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Ефекти
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагінація
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "вліво/вправо"
+
+			navigation: {
+				prevEl: '.for__left',
+				nextEl: '.for__right',
+			},
+			
+			// Брейкпоінти
+			breakpoints: {
+				320: {
+					slidesPerView: 1.5,
+					spaceBetween: 24,
+					//autoHeight: true,
+				},
+				450: {
+					slidesPerView: 2,
+					spaceBetween: 24,
+					//autoHeight: true,
+				},
+
+				640: {
+					slidesPerView: 2.5,
+					spaceBetween: 24,
+					//autoHeight: true,
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 24,
+				},
+				
+				
+			},
+			
 			// Події
 			on: {
 
